@@ -20,7 +20,13 @@ namespace Bread.Models
     }
     public void AddBreadPrice(int breadNumber)
     {
+      if(breadNumber % 3 == 0)
+      {
+        Price += (breadNumber - 5);
+      }
+      else{
       Price += breadNumber;
+      }
     }
     // public int BreadModifier(int bread)
     // {

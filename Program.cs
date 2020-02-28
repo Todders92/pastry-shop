@@ -34,15 +34,16 @@ namespace PastryShop
       // Console.WriteLine("this is the bread modifier results " + stuff);
       int numberResponse = bread.AddBread(breadNumber);
       bread.AddBreadPrice(numberResponse);
-      // Console.WriteLine("this is the total price for the bread order: $" + bread.Price);
-      // Console.WriteLine("number of breads in bread order object: " + bread.NumberOfBread);
+      Console.WriteLine("this is the total price for the bread order: $" + bread.Price);
+      Console.WriteLine("number of breads in bread order object: " + bread.NumberOfBread);
+     
       ///////////////////////pastry logic ///////////////////////////
       Console.WriteLine("how many orders of pastry would you like?");
       string pastryResponse = Console.ReadLine();
       int pastryNumber = int.Parse(pastryResponse);
       int numberResponse2 = pastry.AddPastry(pastryNumber);
       pastry.AddPastryPrice(numberResponse2);
-      // Console.WriteLine("this is the total price for the pastry order: $" + pastry.Price);
+      Console.WriteLine("this is the total price for the pastry order: $" + pastry.Price);
       // Console.WriteLine("number of pastries in pastry object: " + pastry.NumberOfPastries);
       Console.WriteLine("your order total is $" + (pastry.Price + bread.Price) + ".00");
 
