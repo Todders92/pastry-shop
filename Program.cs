@@ -8,7 +8,18 @@ namespace PastryShop
   {
     public static void Main()
     {
-
+      Console.WriteLine("hello and welcome to Pierre's Bakery!");
+      Console.WriteLine("Below are some of the food items availible");
+      Console.WriteLine("---------------------------------------------");
+      Console.WriteLine("Bread ------ $5.00 ea or buy 2 get on free!");
+      Console.WriteLine("Pastry ----- $2.00 ea or 3 for $5.00");
+      Console.WriteLine("---------------------------------------------");
+      Console.WriteLine("how many orders of bread would you like?");
+      string breadResponse = Console.ReadLine();
+      Console.WriteLine(breadResponse);
+      Console.WriteLine("how many orders of pastry would you like?");
+      string pastryResponse = Console.ReadLine();
+      Console.WriteLine(pastryResponse);
     }
   }
 }
