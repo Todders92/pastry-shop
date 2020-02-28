@@ -37,6 +37,7 @@ namespace PastryShop
       pastry.AddPastryPrice(numberResponse2);
       Console.WriteLine("this is the total price for the pastry order: $" + pastry.Price);
       Console.WriteLine("number of pastries in pastry object: " + pastry.NumberOfPastries);
+      Console.WriteLine("your order total is $" + (pastry.Price + bread.Price) + ".00");
 
     }
   }
