@@ -17,16 +17,27 @@ namespace PastryShop
       Console.WriteLine("Bread ------ $5.00 ea or buy 2 get on free!");
       Console.WriteLine("Pastry ----- $2.00 ea or 3 for $5.00");
       Console.WriteLine("---------------------------------------------");
+      ////////////////////////////////////////////////////////////////////////////
+      ////////////////////// ORDERING LOGIC //////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////
+
+      /////////////////////bread logic //////////////////////////
       Console.WriteLine("how many orders of bread would you like?");
       string breadResponse = Console.ReadLine();
       int breadNumber = int.Parse(breadResponse);
-      bread.AddBread(breadNumber);
+      int numberResponse = bread.AddBread(breadNumber);
+      bread.AddBreadPrice(numberResponse);
+      Console.WriteLine("this is the total price for the bread order: $" + bread.Price);
       Console.WriteLine("number of breads in bread order object: " + bread.NumberOfBread);
+      ///////////////////////pastry logic ///////////////////////////
       Console.WriteLine("how many orders of pastry would you like?");
       string pastryResponse = Console.ReadLine();
       int pastryNumber = int.Parse(pastryResponse);
-      pastry.AddPastry(pastryNumber);
+      int numberResponse2 = pastry.AddPastry(pastryNumber);
+      pastry.AddPastryPrice(numberResponse2);
+      Console.WriteLine("this is the total price for the pastry order: $" + pastry.Price);
       Console.WriteLine("number of pastries in pastry object: " + pastry.NumberOfPastries);
+
     }
   }
 }
