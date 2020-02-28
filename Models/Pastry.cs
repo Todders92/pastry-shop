@@ -5,6 +5,20 @@ namespace Pastry.Models
 {
   public class Pastry
   {
-  ///object in here
+  public class PastryOrder
+    {
+      public int NumberOfPastries { get; set; }
+      public int Price { get; set; }
+
+      public PastryOrder(int numberOfPastries, int price)
+      {
+        NumberOfPastries = numberOfPastries;
+        Price = price;
+      }
+
+
+
+
+    }
   }
 }
