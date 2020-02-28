@@ -20,26 +20,30 @@ namespace PastryShop
       ////////////////////////////////////////////////////////////////////////////
       ////////////////////// ORDERING LOGIC //////////////////////////////////////
       ////////////////////////////////////////////////////////////////////////////
+      List<int> breadModifier = new List <int> {2, 2, 2, 2};
+      Console.WriteLine("this counts the total of the bread list: " + breadModifier.Count);
+
+
+
 
       /////////////////////bread logic //////////////////////////
       Console.WriteLine("how many orders of bread would you like?");
       string breadResponse = Console.ReadLine();
       int breadNumber = int.Parse(breadResponse);
-      Console.WriteLine("this is the number of breads you enetered " + breadNumber);
-      int stuff = bread.BreadModifier(breadNumber);
-      Console.WriteLine(stuff);
+      // int stuff = bread.BreadModifier(breadNumber);
+      // Console.WriteLine("this is the bread modifier results " + stuff);
       int numberResponse = bread.AddBread(breadNumber);
       bread.AddBreadPrice(numberResponse);
-      Console.WriteLine("this is the total price for the bread order: $" + bread.Price);
-      Console.WriteLine("number of breads in bread order object: " + bread.NumberOfBread);
+      // Console.WriteLine("this is the total price for the bread order: $" + bread.Price);
+      // Console.WriteLine("number of breads in bread order object: " + bread.NumberOfBread);
       ///////////////////////pastry logic ///////////////////////////
       Console.WriteLine("how many orders of pastry would you like?");
       string pastryResponse = Console.ReadLine();
       int pastryNumber = int.Parse(pastryResponse);
       int numberResponse2 = pastry.AddPastry(pastryNumber);
       pastry.AddPastryPrice(numberResponse2);
-      Console.WriteLine("this is the total price for the pastry order: $" + pastry.Price);
-      Console.WriteLine("number of pastries in pastry object: " + pastry.NumberOfPastries);
+      // Console.WriteLine("this is the total price for the pastry order: $" + pastry.Price);
+      // Console.WriteLine("number of pastries in pastry object: " + pastry.NumberOfPastries);
       Console.WriteLine("your order total is $" + (pastry.Price + bread.Price) + ".00");
 
     }
