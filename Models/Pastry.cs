@@ -13,9 +13,14 @@ namespace Pastry.Models
       NumberOfPastries = numberOfPastries;
       Price = price;
     }
-    public void AddPastry(int number)
+    public int AddPastry(int number)
     {
       NumberOfPastries = number;
+      return number;
+    }
+    public void AddPastryPrice(int pastryNumber)
+    {
+      Price += pastryNumber;
     }
   }
 }

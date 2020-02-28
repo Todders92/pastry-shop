@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Pastry.Models;
+using Bread.Models;
 
 namespace PastryShop
 {
@@ -9,6 +10,7 @@ namespace PastryShop
     public static void Main()
     {
       PastryOrder pastry = new PastryOrder(0, 0);
+      BreadOrder bread = new BreadOrder(0, 0);
       Console.WriteLine("hello and welcome to Pierre's Bakery!");
       Console.WriteLine("Below are some of the food items availible");
       Console.WriteLine("---------------------------------------------");
@@ -17,11 +19,12 @@ namespace PastryShop
       Console.WriteLine("---------------------------------------------");
       Console.WriteLine("how many orders of bread would you like?");
       string breadResponse = Console.ReadLine();
-      Console.WriteLine(breadResponse);
+      int breadNumber = int.Parse(breadResponse);
+      bread.AddBread(breadNumber);
+      Console.WriteLine("number of breads in bread order object: " + bread.NumberOfBread);
       Console.WriteLine("how many orders of pastry would you like?");
       string pastryResponse = Console.ReadLine();
       int pastryNumber = int.Parse(pastryResponse);
-      Console.WriteLine(pastryResponse);
       pastry.AddPastry(pastryNumber);
       Console.WriteLine("number of pastries in pastry object: " + pastry.NumberOfPastries);
     }
