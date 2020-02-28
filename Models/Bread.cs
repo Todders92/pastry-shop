@@ -16,7 +16,7 @@ namespace Bread.Models
     public int AddBread(int number)
     {
       NumberOfBread = number;
-      return number;
+      return number*5;
     }
     public void AddBreadPrice(int breadNumber)
     {
