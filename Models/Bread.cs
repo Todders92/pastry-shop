@@ -22,5 +22,23 @@ namespace Bread.Models
     {
       Price += breadNumber;
     }
+    public int BreadModifier(int bread)
+    {
+      List <int> breadModifier = new List <int> {};
+      for (int i = 0; i <=bread; i++)
+      {
+        if(bread % 2 == 0)
+        {
+          breadModifier.Add(2);
+          return breadModifier;
+        }
+        else 
+        {
+          breadModifier.Add(1);
+          return breadModifier;
+        }
+        return breadModifier;
+      }
+    }
   }
 }

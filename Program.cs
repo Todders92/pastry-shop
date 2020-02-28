@@ -25,6 +25,9 @@ namespace PastryShop
       Console.WriteLine("how many orders of bread would you like?");
       string breadResponse = Console.ReadLine();
       int breadNumber = int.Parse(breadResponse);
+      Console.WriteLine("this is the number of breads you enetered " + breadNumber);
+      int stuff = bread.BreadModifier(breadNumber);
+      Console.WriteLine(stuff);
       int numberResponse = bread.AddBread(breadNumber);
       bread.AddBreadPrice(numberResponse);
       Console.WriteLine("this is the total price for the bread order: $" + bread.Price);
