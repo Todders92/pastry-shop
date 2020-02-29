@@ -14,14 +14,14 @@ namespace PastryShop
       Console.WriteLine("hello and welcome to Pierre's Bakery!");
       Console.WriteLine("Below are some of the food items availible");
       Console.WriteLine("---------------------------------------------");
-      Console.WriteLine("Bread ------ $5.00 ea or buy 2 get on free!");
+      Console.WriteLine("Bread ------ $5.00 ea or buy 2 or more get one free!");
       Console.WriteLine("Pastry ----- $2.00 ea or 3 for $5.00");
       Console.WriteLine("---------------------------------------------");
       ////////////////////////////////////////////////////////////////////////////
       ////////////////////// ORDERING LOGIC //////////////////////////////////////
       ////////////////////////////////////////////////////////////////////////////
-      List<int> breadModifier = new List <int> {2, 2, 2, 2};
-      Console.WriteLine("this counts the total of the bread list: " + breadModifier.Count);
+      // List<int> breadModifier = new List <int> {2, 2, 2, 2};
+      // Console.WriteLine("this counts the total of the bread list: " + breadModifier.Count);
 
 
 

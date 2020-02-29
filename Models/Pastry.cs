@@ -20,7 +20,7 @@ namespace Pastry.Models
     }
     public void AddPastryPrice(int pastryNumber)
     {
-      if(pastryNumber % 3 == 0)
+      if(pastryNumber >=3)
       {
         Price += (pastryNumber - 1);
       }
