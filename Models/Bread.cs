@@ -6,7 +6,6 @@ namespace Bread.Models
   public class BreadOrder
   {
     public int BreadPrice { get; set; }
-    public int Price { get; set; }
 
     public BreadOrder(int breadPrice)
     {
