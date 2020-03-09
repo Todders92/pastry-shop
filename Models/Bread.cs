@@ -5,17 +5,17 @@ namespace Bread.Models
 {
   public class BreadOrder
   {
-    public int NumberOfBread { get; set; }
+    public int BreadPrice { get; set; }
     public int Price { get; set; }
 
-    public BreadOrder(int numberOfBread)
+    public BreadOrder(int breadPrice)
     {
-      NumberOfBread = numberOfBread;
+      BreadPrice = breadPrice;
     }
     public int AddBreadPrice(int breadNumber)
     {
-      NumberOfBread = (NumberOfBread - (NumberOfBread / 3)) * 5;
-      return NumberOfBread;
+      BreadPrice = (BreadPrice - (BreadPrice / 3)) * 5;
+      return BreadPrice;
     }
   }
 }
