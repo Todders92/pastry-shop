@@ -24,8 +24,9 @@ namespace Pastry.Models
       {
         Price += (pastryNumber - 1);
       }
-      else{
-      Price += pastryNumber;
+      else
+      {
+        Price += pastryNumber;
       }
     }
   }

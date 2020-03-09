@@ -8,43 +8,14 @@ namespace Bread.Models
     public int NumberOfBread { get; set; }
     public int Price { get; set; }
 
-    public BreadOrder(int numberOfBread, int price)
+    public BreadOrder(int numberOfBread)
     {
       NumberOfBread = numberOfBread;
-      Price = price;
     }
-    public int AddBread(int number)
+    public int AddBreadPrice(int breadNumber)
     {
-      NumberOfBread = number;
-      return number*5;
+      NumberOfBread = (NumberOfBread - (NumberOfBread / 3)) * 5;
+      return NumberOfBread;
     }
-    public void AddBreadPrice(int breadNumber)
-    {
-      if(breadNumber % 3 == 0)
-      {
-        Price += (breadNumber - 5);
-      }
-      else{
-      Price += breadNumber;
-      }
-    }
-    // public int BreadModifier(int bread)
-    // {
-    //   List<int> breadModifier = new List <int> {};
-    //   for (int i = 0; i <=bread; i++)
-    //   {
-    //     if(bread % 2 == 0)
-    //     {
-    //      breadModifier.Add(2);
-    //       return bread;
-    //     }
-    //     else 
-    //     {
-    //       breadModifier.Add(1);
-    //       return bread;
-    //     }
-    //   }
-    //   return breadModifier.Count;
-    // }
   }
 }
