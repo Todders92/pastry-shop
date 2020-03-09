@@ -43,16 +43,7 @@ namespace PastryShop
         Console.WriteLine("your order total is $" + (bread.BreadPrice) + ".00");
         Console.WriteLine("Thank you for coming in today, enjoy your bread!");
       }
-      else if (answer.ToLower() == "y")
-      {
-      Console.WriteLine("how many orders of pastry would you like?");
-      string pastryResponse = Console.ReadLine();
-      int pastryNumber = int.Parse(pastryResponse);
-      PastryOrder pastry = new PastryOrder(pastryNumber);
-      int numberResponse2 = pastry.AddPastry(pastryNumber);
-      pastry.AddPastryPrice(numberResponse2);
-      Console.WriteLine("your order total is $" + (pastry.Price + bread.BreadPrice) + ".00");
-      Console.WriteLine("thank you for coming in today! Enjoy!");
+        
       }
     }
   }
