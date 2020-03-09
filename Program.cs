@@ -43,8 +43,6 @@ namespace PastryShop
         Console.WriteLine("your order total is $" + (bread.BreadPrice) + ".00");
         Console.WriteLine("Thank you for coming in today, enjoy your bread!");
       }
-        
-      }
     }
   }
 }
