@@ -11,6 +11,7 @@ namespace Pastry.Models
     public PastryOrder(int numberOfPastries)
     {
       NumberOfPastries = numberOfPastries;
+    
     }
     public int AddPastry(int number)
     {

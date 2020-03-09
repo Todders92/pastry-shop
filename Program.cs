@@ -13,7 +13,7 @@ namespace PastryShop
       Console.WriteLine("Below are some of the food items availible");
       Console.WriteLine("---------------------------------------------");
       Console.WriteLine("Bread ------ $5.00 ea or buy 2 or more get one free!");
-      Console.WriteLine("Pastry ----- $2.00 ea or 3 for $5.00 (One time deal");
+      Console.WriteLine("Pastry ----- $2.00 ea or 3 for $5.00");
       Console.WriteLine("---------------------------------------------");
       ////////////////////////////////////////////////////////////////////////////
       ////////////////////// ORDERING LOGIC //////////////////////////////////////

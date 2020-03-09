@@ -13,7 +13,7 @@ namespace Bread.Models
     }
     public int AddBreadPrice(int breadNumber)
     {
-      BreadPrice = (BreadPrice - (BreadPrice / 3)) * 5;
+      BreadPrice = (breadNumber - (breadNumber / 3)) * 5;
       return BreadPrice;
     }
   }
