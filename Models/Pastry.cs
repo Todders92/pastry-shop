@@ -8,10 +8,9 @@ namespace Pastry.Models
     public int NumberOfPastries { get; set; }
     public int Price { get; set; }
 
-    public PastryOrder(int numberOfPastries ,int price)
+    public PastryOrder(int numberOfPastries)
     {
       NumberOfPastries = numberOfPastries;
-      Price = price;
     }
     public int AddPastry(int number)
     {
