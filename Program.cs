@@ -33,9 +33,8 @@ namespace PastryShop
         string pastryResponse = Console.ReadLine();
         int pastryNumber = int.Parse(pastryResponse);
         PastryOrder pastry = new PastryOrder(pastryNumber);
-        int numberResponse2 = pastry.AddPastry(pastryNumber);
-        pastry.AddPastryPrice(numberResponse2);
-        Console.WriteLine("your order total is $" + (pastry.Price + bread.BreadPrice) + ".00");
+        int numberResponse2 = pastry.AddPastryPrice(pastryNumber);
+        Console.WriteLine("your order total is $" + (pastry.PastryPrice + bread.BreadPrice) + ".00");
         Console.WriteLine("Thank you for coming in today, we hope to see you again soon!");
       }
       else if (answer.ToLower() == "n")

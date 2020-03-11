@@ -5,29 +5,16 @@ namespace Pastry.Models
 {
   public class PastryOrder
   {
-    public int NumberOfPastries { get; set; }
-    public int Price { get; set; }
-
-    public PastryOrder(int numberOfPastries)
-    {
-      NumberOfPastries = numberOfPastries;
+    public int PastryPrice { get; set; }
     
-    }
-    public int AddPastry(int number)
+    public PastryOrder(int pastryPrice)
     {
-      NumberOfPastries = number;
-      return number*2;
+      PastryPrice = pastryPrice;
     }
-    public void AddPastryPrice(int pastryNumber)
+    public int AddPastryPrice(int pastryNumber)
     {
-      if(pastryNumber >=3)
-      {
-        Price += (pastryNumber - 1);
-      }
-      else
-      {
-        Price += pastryNumber;
-      }
+      PastryPrice =  (pastryNumber / 3) * 5 + (pastryNumber % 3) * 2;
+      return PastryPrice;
     }
   }
 }
