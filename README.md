@@ -41,8 +41,8 @@ _none yet..._
 
 #### This applications requires the user to have the follwing installed for the application to work correctly.
 
-* _.Net Core SDK, install instructions can be found here_
-* _dotnet script, install instructions can be found here_
+* _.Net Core SDK, install instructions can be [found here](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-c-and-net)_
+* _dotnet script, install instructions can be [found here](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-dotnet-script)_
 
 ### Main setup instructions
 
