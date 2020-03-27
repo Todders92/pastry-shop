@@ -1,4 +1,4 @@
-# _Pizza Shop_
+# _Pastry Shop_
 
 #### _A console application for ordering bread and pastries_ _2/28/2020_
 
